@@ -1,0 +1,103 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-right: auto;
+    background-color: rgb(199, 42, 68);
+    background-image: url(https://i.pinimg.com/originals/7d/1a/38/7d1a38ff967e8d4db166ef98c5d97929.gif);
+}
+.container{
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image{
+    height: 200px;
+    width: auto;
+    text-align: center;
+}
+header{
+    text-align: center;
+}
+.title{
+    color: white;
+    text-align: center;
+    font-family: 'Comic Neue', cursive;
+}
+.content{
+    text-align: center;
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-size: 20px;
+}
+table{
+    border-collapse: collapse;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+table th,td,tr{
+    border: white 2px solid;
+}
+table tr td{
+    padding: 5px 10px;
+    font-family: 'Comic Neue', cursive;
+}
+table tr th{
+    font-family: 'Comic Neue', cursive;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.video{
+    margin-top: 15px;
+    text-align: center;
+    border: white solid 2px;
+    padding: 15px;
+}
+canvas{
+    position:absolute;top:0;left:0
+}
+.fix{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.video-mobile{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .video-mobile{
+        display: block;
+        margin-top: 15px;
+        text-align: center;
+        border: white solid 2px;
+        padding: 15px;
+    }
+    .video{
+        display: none;
+    }
+    table{
+        border-collapse: collapse;
+        color: white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .image{
+        height: 150px;
+        width: auto;
+    }
+    .fix{
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+}

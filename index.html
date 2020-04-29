@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Holiday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <canvas id="canvas"></canvas>
+</head>
+<body>
+    <header>
+        <h1 class="title">Happy Merry Christmas</h1>
+        <img src="images/1.jpg" alt="" class="image">
+    </header>
+    <div class="container">
+        <p class="content">!!! We are so happy can celebrate Christmas for you !!! <br> !!! Fill up the form and get you present now !!!</p>
+        <form name="form1" method="POST" action="mailto:jiaminglim0101@gmail.com" enctype="text/plain" onsubmit="return validate();">
+            <table>
+                <tr>
+                    <th colspan="2">Present Wish Form</th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" placeholder="Write your name" required></td>
+                </tr>
+                <tr>
+                    <td>NRIC:</td>
+                    <td><input type="number" name="nric" placeholder="xxxxxx-xx-xxxx" required></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Address:</td>
+                    <td><input type="text" name="address" placeholder="Address" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="postcode" placeholder="Postal code" required></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="state" placeholder="State" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number:</td>
+                    <td><input type="number" name="contactnumber" placeholder="01x-xxxxxxx" required></td>
+                </tr>
+                <tr>
+                    <td>Present:</td>
+                    <td><textarea name="present" id="" cols="30" rows="10" placeholder="Describe what present you want!!!"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Send to Santa Clause now !!!"></td>
+                </tr>
+            </table>
+        </form>
+        
+        <div class="video">
+            <h1 class="title">Why we want to celebrate Christmas?</h1>
+            <iframe width="700" height="400"src="https://www.youtube.com/embed/F8kCCjM8QPE"></iframe>
+        </div>
+        <div class="video-mobile">
+            <h1 class="title">Why we want to celebrate Christmas?</h1>
+            <iframe width="auto" height="200"src="https://www.youtube.com/embed/F8kCCjM8QPE"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <audio class="fix" controls autoplay>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>
